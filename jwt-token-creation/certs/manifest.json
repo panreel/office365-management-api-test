@@ -1,0 +1,101 @@
+{
+  "appId": "9c630582-94af-4836-9ff2-429d92a6d141",
+  "appRoles": [],
+  "availableToOtherTenants": true,
+  "displayName": "APIReportingTool",
+  "errorUrl": null,
+  "groupMembershipClaims": null,
+  "homepage": "https://apireporting-app.azurewebsites.net",
+  "identifierUris": [
+    "https://apireporting.onmicrosoft.com/tool"
+  ],
+  "keyCredentials": [
+    {
+      "customKeyIdentifier": "EydRk2D7//x1SMvMj/HqsZPAQFg=",
+      "keyId": "4b6826e7-116c-440d-83fa-e14ec4deebca",
+      "type": "AsymmetricX509Cert",
+      "usage": "Verify",
+      "value": "MIIDODCCAiSgAwIBAgIQM8POTO/8a5JJfoUQ+2TidDAJBgUrDgMCHQUAMCsxKTAnBgNVBAMTIE15Q29tcGFueU5hbWUgUmVwb3J0aW5nQVBJIE15QXBwMB4XDTE1MDMxNDIzMDAwMFoXDTE3MDMxNDIzMDAwMFowKzEpMCcGA1UEAxMgTXlDb21wYW55TmFtZSBSZXBvcnRpbmdBUEkgTXlBcHAwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCV75yg33tTgoxlFoOjx68oNAimljOT43tSV3lcKj1SxdOu0GNawPHUV344iTmYwMkeh3Xq42ghL93f3Zh/XquAhBPKzkFHX6F+iy5g3bPKwBGXPHnjntRdgCDwwSNGqCXRQpW2zyy34KSkd4PtsGVftGNkZeJXfHPxSO2Sp0nqhFE5DdA15fIq+C+E0Px2rkVreiEisLgd7frZVX+r9jvxq2bd8mon15GJAjO6ImqdOXmHzEiG0VCsyHVMAFxE/v3p5LDSDMLmS7ZKrK/BlgwgqdwtzkO7oiXf00S01/OZCRCOXHA8bLwM78zK67vC22ssPzwfWFa3hUKXoAd8ss9dAgMBAAGjYDBeMFwGA1UdAQRVMFOAEP69cDECYS2dcfVHR0qjo22hLTArMSkwJwYDVQQDEyBNeUNvbXBhbnlOYW1lIFJlcG9ydGluZ0FQSSBNeUFwcIIQM8POTO/8a5JJfoUQ+2TidDAJBgUrDgMCHQUAA4IBAQAv0acY8SyGMSAhBq0drUmY1vP7XNpb7b1jKvaF4CqG13odvAODJdBcvHI1vQ/qFqbpwdgSJCBXDs0mLa1zz8I5a3atELHRxEmY2EgVRHLPJc2dCm6hDfINmVeP95baaOQYSYz2sANDoMDJ2n8pNw1eoMAkt3GW42Dg9RnrvJH7raWR83g5fvQOEcmmqLhUVXhk8St+6KoyKf+flcEbP59OjHqTEaxc87/pnI3NwU6tzD+CQWjBBhYIU3qB27amq5gTXCHxxU1fdaqY16E8XBw58sHUYvN1J2IhPQOOY9tBCyTL9BKPDKBMxzVo/uLdm083kdu1aVN+RdiM+lF8UHQL"
+    }
+  ],
+  "knownClientApplications": [],
+  "logoutUrl": null,
+  "oauth2AllowImplicitFlow": false,
+  "oauth2AllowUrlPathMatching": false,
+  "oauth2Permissions": [
+    {
+      "adminConsentDescription": "Allow the application to access APIReportingTool on behalf of the signed-in user.",
+      "adminConsentDisplayName": "Access APIReportingTool",
+      "id": "754c4c2e-eedb-42b2-b0ba-5c9f975c0ed3",
+      "isEnabled": true,
+      "type": "User",
+      "userConsentDescription": "Allow the application to access APIReportingTool on your behalf.",
+      "userConsentDisplayName": "Access APIReportingTool",
+      "value": "user_impersonation"
+    }
+  ],
+  "oauth2RequirePostResponse": false,
+  "passwordCredentials": [
+    {
+      "customKeyIdentifier": null,
+      "endDate": "2017-12-04T11:10:27.1423987Z",
+      "keyId": "489cdb4c-6f72-4f95-9e0d-478c58deb14b",
+      "startDate": "2015-12-04T11:10:27.1423987Z",
+      "value": null
+    },
+    {
+      "customKeyIdentifier": null,
+      "endDate": "2016-11-21T13:15:46.545526Z",
+      "keyId": "0184b132-8cb8-45a4-aca8-29e0b62dcd49",
+      "startDate": "2015-11-21T13:15:46.545526Z",
+      "value": null
+    }
+  ],
+  "publicClient": null,
+  "replyUrls": [
+    "http://localhost",
+    "https://apireporting-app.azurewebsites.net",
+    "https://apireporting-redirect.azurewebsites.net/redirect"
+  ],
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "c5393580-f805-4401-95e8-94b7a6ef2fc2",
+      "resourceAccess": [
+        {
+          "id": "825c9d21-ba03-4e97-8007-83f020ff8c0f",
+          "type": "Role,Scope"
+        },
+        {
+          "id": "e2cea78f-e743-4d8f-a16a-75b629a038ae",
+          "type": "Role,Scope"
+        },
+        {
+          "id": "594c1fb6-4f81-4475-ae41-0c394909246c",
+          "type": "Role,Scope"
+        }
+      ]
+    },
+    {
+      "resourceAppId": "00000002-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "311a71cc-e848-46a1-bdf8-97ff7156d8e6",
+          "type": "Scope"
+        }
+      ]
+    }
+  ],
+  "samlMetadataUrl": null,
+  "extensionProperties": [],
+  "objectType": "Application",
+  "objectId": "28714e34-4085-44b6-a54a-a4c3b027aa0a",
+  "deletionTimestamp": null,
+  "createdOnBehalfOf": null,
+  "createdObjects": [],
+  "manager": null,
+  "directReports": [],
+  "members": [],
+  "memberOf": [],
+  "owners": [],
+  "ownedObjects": []
+}
