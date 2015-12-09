@@ -14,7 +14,7 @@ Setup the params in `config.ps1` file related to your Azure AD / Office 365 subs
 #### General Params
 
 2.1 __Tenant ID__  
-_Note: You can get your tenant-id without using PS following this guide: http://merill.net/2015/01/how-to-get-the-azure-ad-tenant-id-without-powershell/_  
+_Note: You can get your tenant-id without using PS following this [guide](http://merill.net/2015/01/how-to-get-the-azure-ad-tenant-id-without-powershell/ "TenantID Guide")._
 `$tid = "{your-tenant-id}"`  
 
 2.2 __Client ID__  
@@ -39,11 +39,11 @@ _Get it by calling `https://login.microsoftonline.com/common/oauth2/authorize?` 
 _Choose if enabling S2S_  
 `$isS2SEnabled = {$True OR $False}`  
 
-2.7 Certificate Path (PFX) -> Note: Save pfx in \jwt-token-creation\certs  
-_If S2S is enabled, a pfx cert is required to generate a valid JWT token. Cert should be placed in the `jwt-token-creation\certs\` folder_  
+2.7 __Certificate Path (PFX)__  
+_If S2S is enabled, a pfx cert is required to generate a valid JWT token. __Cert should be placed in the `jwt-token-creation\certs\` folder__ _  
 `$relativeCertPath = "\jwt-token-creation\certs\{your-pfx-name-used-to-create-jwt-s2s-token}.pfx"`  
 
-2.8 Certificate Password  
+2.8 __Certificate Password__  
 _If S2S is enabled, the password for the PrK stored in the pfx cert. This is required to generate a valid JWT token._  
 `$certPassword = "{your-pfx-private-key-password-used-to-create-jwt-s2s-token}"`  
 
