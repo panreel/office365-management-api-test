@@ -22,7 +22,8 @@ _Find it in your configuration pane for you Azure AD app_
 `$clientID = "{your-app-client-id}"`  
 
 2.3 __Client Secret__  
-_Find it in your configuration pane for you Azure AD app under the Keys entry - if no keys are present generate one and paste here the value_  
+_Find it in your configuration pane for you Azure AD app under the Keys entry_  
+_If no keys are present generate one and paste here the value_  
 `$clientSecret = "{your-app-client-secret}"`  
 
 2.4 __Redirect URL__  
@@ -30,7 +31,7 @@ _Find it in your configuration pane for you Azure AD app_
 `$redirectURI = "{your-redirect-URL-for-oauth2-web-based-authentication}"`  
 
 2.5 __Authorize Code__  
-_Get it by calling `https://login.microsoftonline.com/common/oauth2/authorize?` endpoint. More info for getting it in the next section _  
+_Get it by calling `https://login.microsoftonline.com/common/oauth2/authorize?` endpoint. More info for getting it in the next section_  
 `$authCode = "{your-authorization-code}"`  
   
 #### Service to Service (S2S) Mode Params  
@@ -40,7 +41,7 @@ _Choose if enabling S2S_
 `$isS2SEnabled = {$True OR $False}`  
 
 2.7 __Certificate Path (PFX)__  
-_If S2S is enabled, a pfx cert is required to generate a valid JWT token. __Cert should be placed in the `jwt-token-creation\certs\` folder__ _  
+_If S2S is enabled, a pfx cert is required to generate a valid JWT token. __Cert should be placed in the `jwt-token-creation\certs\` folder__  
 `$relativeCertPath = "\jwt-token-creation\certs\{your-pfx-name-used-to-create-jwt-s2s-token}.pfx"`  
 
 2.8 __Certificate Password__  
@@ -67,4 +68,4 @@ Note: In order to get some results from the test REST call, you need to activate
 
 ## Notes
 
-This toolset was written by using `cURL` command to perform REST calls, since the need for developing it rises in a Linux/UNIX context. The porting to Win used for this toolset can be found [here](http://curl.haxx.se/ "cURL Windows"). In Win-based environments the suggestion is to use `Invoke-RestMethod` command (See [here](http://blogs.technet.com/b/heyscriptingguy/archive/2013/10/21/invokerestmethod-for-the-rest-of-us.aspx "Invoke-RestMethod").
+This toolset was written by using `cURL` command to perform REST calls, since the need for developing it rises in a Linux/UNIX context. The porting to Win used for this toolset can be found [here](http://curl.haxx.se/ "cURL Windows"). In Win-based environments the suggestion is to use `Invoke-RestMethod` command (See [here](http://blogs.technet.com/b/heyscriptingguy/archive/2013/10/21/invokerestmethod-for-the-rest-of-us.aspx "Invoke-RestMethod")).
