@@ -14,7 +14,7 @@ Setup the params in `config.ps1` file related to your Azure AD / Office 365 subs
 #### General Params
 
 2.1 __Tenant ID__  
-_Note: You can get your tenant-id without using PS following this [guide](http://merill.net/2015/01/how-to-get-the-azure-ad-tenant-id-without-powershell/ "TenantID Guide")._
+_Note: You can get your tenant-id without using PS following this [guide](http://merill.net/2015/01/how-to-get-the-azure-ad-tenant-id-without-powershell/ "TenantID Guide")._  
 `$tid = "{your-tenant-id}"`  
 
 2.2 __Client ID__  
@@ -31,7 +31,8 @@ _Find it in your configuration pane for you Azure AD app_
 `$redirectURI = "{your-redirect-URL-for-oauth2-web-based-authentication}"`  
 
 2.5 __Authorize Code__  
-_Get it by calling `https://login.microsoftonline.com/common/oauth2/authorize?` endpoint. More info for getting it in the next section_  
+_Get it by calling `https://login.microsoftonline.com/common/oauth2/authorize?` endpoint._  
+_More info for getting it in the next section_    
 `$authCode = "{your-authorization-code}"`  
   
 #### Service to Service (S2S) Mode Params  
@@ -41,7 +42,8 @@ _Choose if enabling S2S_
 `$isS2SEnabled = {$True OR $False}`  
 
 2.7 __Certificate Path (PFX)__  
-_If S2S is enabled, a pfx cert is required to generate a valid JWT token. __Cert should be placed in the `jwt-token-creation\certs\` folder__  
+_If S2S is enabled, a pfx cert is required to generate a valid JWT token._  
+__Cert should be placed in the `jwt-token-creation\certs\` folder__  
 `$relativeCertPath = "\jwt-token-creation\certs\{your-pfx-name-used-to-create-jwt-s2s-token}.pfx"`  
 
 2.8 __Certificate Password__  
