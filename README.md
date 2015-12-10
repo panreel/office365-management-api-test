@@ -23,7 +23,7 @@ _Find it in your configuration pane for you Azure AD app_
 
 2.3 __Client Secret__  
 _Find it in your configuration pane for you Azure AD app under the Keys entry_  
-_If no keys are present generate one and paste here the value_  
+_If no keys are present generate one and paste the value here_  
 `$clientSecret = "{your-app-client-secret}"`  
 
 2.4 __Redirect URL__  
@@ -54,11 +54,11 @@ _If S2S is enabled, the password for the PrK stored in the pfx cert. This is req
 
 The scope of the test is to validate if authentication to Azure AD succeeds (in Web-based auth or S2S) and perform a test call to retrieve existing subscriptions.
 
-Note: In order to get some results from the test REST call, you need to activate at least one subscription to some of the monitorable workload via Management APIs. To activate a subscription, please follow [Available Operations Guide](https://msdn.microsoft.com/EN-US/library/office/mt227394.aspx#sectionSection0 "Available Operations Guide") and start a subscription POSTing to `/subscriptions/start?contentType={ContentType}` endpoint.
+Note: In order to get some results from the test REST call, you need to activate at least one subscription to some of the monitorable workloads via Management APIs. To activate a subscription, please follow [Available Operations Guide](https://msdn.microsoft.com/EN-US/library/office/mt227394.aspx#sectionSection0 "Available Operations Guide") and start a subscription POSTing to `/subscriptions/start?contentType={ContentType}` endpoint.
 
 ### 3.1 Testing Web-based authentication (i.e. `$isS2SEnabled = $False`)
 
-3.1.1 Retrieve an authorization code (do this for every test run - authorization code gets invalidated after an access token is generated from this). In order to do this, open your browser to `https://login.microsoftonline.com/common/oauth2/authorize?response_type=code&resource=https://manage.office.com&client_id={your-app-client-id}&redirect_uri={your-redirect-URL-for-oauth2-web-based-authentication}`, replacing {}s with your params. If your tenant admin hasn't granted consent for this app, perform this operation (just for the first time) using an administrator account. After authentication to Azure AD, you will be redirected to `redirect_uri` page, which will have a `?code={CODE-TO-COPY}` in its URL. Copy the code and paste in `config.ps1` file in the root folder.
+3.1.1 Retrieve an authorization code (do this for every test run - authorization code gets invalidated after an access token is generated). To do this, open your browser to `https://login.microsoftonline.com/common/oauth2/authorize?response_type=code&resource=https://manage.office.com&client_id={your-app-client-id}&redirect_uri={your-redirect-URL-for-oauth2-web-based-authentication}`, replacing {}s with your params. If your tenant admin hasn't granted consent for this app, perform this operation (just for the first time) using an administrator account. After authentication to Azure AD, you will be redirected to `redirect_uri` page, which will have a `?code={CODE-TO-COPY}` in its URL. Copy the code and paste in `config.ps1` file in the root folder.
 
 3.1.2 Run the test by calling from Powershell `.\O365ManagementAPI.ps1`
 

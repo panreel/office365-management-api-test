@@ -14,7 +14,7 @@ $authCode = "AAABAAAAiL9Kn2Z27UubvWFPbm0gLZbrkDIn84qJ_AVl629xlqAOtp6BsaZkdcC3F7S
 # -- Service to Service (S2S) Mode Params
 
 # Enable STS
-$isS2SEnabled = $False
+$isS2SEnabled = $True
 # Certificate Path (PFX) -> Note: Save pfx in \jwt-token-creation\certs
 $relativeCertPath = "\jwt-token-creation\certs\apireporting_pk.pfx"
 # Certificate Password

@@ -15,4 +15,5 @@ $claims.Add((New-Object System.Security.Claims.Claim("sub", $subject)))
 # Add JWT ID in JWT
 $claims.Add((New-Object System.Security.Claims.Claim("jti", $jti)))  
 $encToken = Jwt-CreateToken -issuer $issuer -audience $audience -certificate $absoluteCertPath -certificatePassword $certPassword -claims $claims  
-Write-Host " -- JWT Token Created`n$encToken"  
+Write-Host " -- JWT Token Created`n" -foregroundcolor "Green"
+Write-Host "$encToken"
