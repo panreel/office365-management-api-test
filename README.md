@@ -58,7 +58,7 @@ Note: In order to get some results from the test REST call, you need to activate
 
 ### 3.1 Testing Web-based authentication (i.e. `$isS2SEnabled = $False`)
 
-3.1.1 Retrieve an authorization code (do this for every test run - authorization code gets invalidated after an access token is generated). To do this, open your browser to `https://login.microsoftonline.com/common/oauth2/authorize?response_type=code&resource=https://manage.office.com&client_id={your-app-client-id}&redirect_uri={your-redirect-URL-for-oauth2-web-based-authentication}`, replacing {}s with your params. If your tenant admin hasn't granted consent for this app, perform this operation (just for the first time) using an administrator account. After authentication to Azure AD, you will be redirected to `redirect_uri` page, which will have a `?code={CODE-TO-COPY}` in its URL. Copy the code and paste in `config.ps1` file in the root folder.
+3.1.1 Retrieve an authorization code (do this for every test run - authorization code gets invalidated after an access token is generated). To do this, open your browser at `https://login.microsoftonline.com/common/oauth2/authorize?response_type=code&resource=https://manage.office.com&client_id={your-app-client-id}&redirect_uri={your-redirect-URL-for-oauth2-web-based-authentication}`, replacing {}s with your params. If your tenant admin hasn't granted consent for this app, perform this operation (just for the first time) using an administrator account. After authentication to Azure AD, you will be redirected to `redirect_uri` page, which will have a `?code={CODE-TO-COPY}` in its URL. Copy the code and paste in `config.ps1` file in the root folder.
 
 3.1.2 Run the test by calling from Powershell `.\O365ManagementAPI.ps1`
 
