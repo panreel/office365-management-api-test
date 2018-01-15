@@ -1,15 +1,15 @@
 # -- Tenant & App Params
 
 # Tenant ID
-$tid = "788b987f-329f-40a6-ac84-dfbb22668d08"
+$tid = ""
 # Client ID
-$clientID = "9c630582-94af-4836-9ff2-429d92a6d141"
+$clientID = ""
 # Client Secret
-$clientSecret = "/VIYRPoDvqMHkZCj4S0OcHdEoOj6RD/INBSUbksA780="
+$clientSecret = ""
 # Redirect URL
 $redirectURI = "http://localhost/redirect"
 # Authorize Code -> Get it by calling https://login.microsoftonline.com/common/oauth2/authorize?response_type=code&resource=https://manage.office.com&client_id={YOUR-CLIENT-ID}&redirect_uri={REDIRECT_URI}
-$authCode = "AAABAAAAiL9Kn2Z27UubvWFPbm0gLZbrkDIn84qJ_AVl629xlqAOtp6BsaZkdcC3F7SX2Wq2efLXyKu1bs3UKvpBj_HDfBC7wIl7CJsDAhEHhR5GZpYZWLZDZOI15L-RtUSbeAOIEi-eyXPzoBa9-GAWKUjCYxABIq-ZOUS4ac_Fj5Mkh5b7Rt2goFBU8WWIUCEA3z4Z7ivvTqkqTCDb9jnpOgOx2ylTC5LxmrnYEubjKBnNiIBCtNOVyAZ5Azj2wR7fscx1DLQT7wuYnAL6_saWXE8Zro3ut8Dx33m5Q3clKDnzz_YtuG8GI1lj8ixnwBhRAAa4FrwE-BhA3EtszROrR6x8sH6scG-XdL0SM2FtwaCPbcsyQMR98KiqQtAKLhnCnOt3MEyXcB3fVpo2dDAr991yutqISneQejG99Vs-ZRgG4xTNB5aSiM9yCKEZSS0zKpuPXDxKXlHjPm_f025ZC5NqQr53OqTSHCM1Hd89mld9jeZ2XQFaKtJpi5NeEjfJOuW03TkyWfPzFur_Nq1BHUFDxaDyrIuolgGOaXwQDfeRmAZu0G8JkwNsfQWfB2WnwN2SIAA&session_state=7dc4591f-34d1-4fc3-8c14-c6c7549b70b9"
+$authCode = ""
 
 # -- Service to Service (S2S) Mode Params
 
@@ -18,7 +18,7 @@ $isS2SEnabled = $True
 # Certificate Path (PFX) -> Note: Save pfx in \jwt-token-creation\certs
 $relativeCertPath = "\jwt-token-creation\certs\apireporting_pk.pfx"
 # Certificate Password
-$certPassword = "ciaobelli"
+$certPassword = ""
 
 # -- Default params -- Note: DON'T EDIT
 
